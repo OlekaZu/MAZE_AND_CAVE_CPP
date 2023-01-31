@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+build-*
+MazeCave/Maze.pro.user
+MazeCave/Maze.pro.user*
