@@ -11,6 +11,28 @@ My actual work in this project consists of the following matters:
 
 
 ### Work with Mazes
-There are two tabs in the Apps - MAZE and CAVE. After the App is opened, you can see the following window:
+There are two tabs in the Apps - **MAZE** and **CAVE**. After the App is opened, you can see the **MAZE** window:
+
 ![Alt text](/screenshots/maze_window.jpg "Maze window")
+
+Here you can:
+- load the maze from ****.txt file*** (file must be formatted by the certain way, for example, see the folder ***examples***)
+
+![Alt text](/screenshots/open_maze.jpg "Load maze")
+
+- generate the ideal maze, inputing before the rows and columns size (*** The maximum size - 50x50)
+
+![Alt text](/screenshots/generate_maze.jpg "Generate maze")
+
+- find the shortest way between the starting and ending points (or one of the possible ways if maze has loops, or nothing if maze has the isolated area)
+
+![Alt text](/screenshots/solve_maze.jpg "Solve maze")
+![Alt text](/screenshots/solve_maze_loop.jpg "Solve maze loop")
+![Alt text](/screenshots/solve_maze_isolated.jpg "Solve maze isolated")
+
+- save the genetated ideal maze in *.txt file
+
+![Alt text](/screenshots/Save_maze.jpg "Save maze")
+
+
 
