@@ -8,7 +8,19 @@ My actual work in this project consists of the following matters:
 - solving the maze (wave algorithm of finding the shortes).
 
 ### How to Compile the App
-
+#### MacOS, Linux
+```bash
+qmake -o Makefile MazeCave/Maze.pro
+make -f Makefile qmake_all
+make -f Makefile -j1 
+rm -rf moc_* ui_* .qmake.stash qrc_rsc.cpp Makefile build*
+```
+#### Windows
+```bash
+qmake.exe -o Makefile MazeCave/Maze.pro
+mingw32-make.exe -f Makefile qmake_all
+mingw32-make.exe -f Makefile -j20
+```
 
 ### Work with Mazes
 There are two tabs in the Apps - **MAZE** and **CAVE**. After the App is opened, you can see the **MAZE** window:
