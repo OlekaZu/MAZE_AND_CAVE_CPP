@@ -11,15 +11,16 @@ My actual work in this project consists of the following matters:
 #### MacOS, Linux
 ```bash
 qmake -o Makefile MazeCave/Maze.pro
-make -f Makefile qmake_all
 make -f Makefile -j1 
 rm -rf moc_* ui_* .qmake.stash qrc_rsc.cpp Makefile build*
 ```
 #### Windows
 ```bash
-qmake.exe -o Makefile MazeCave/Maze.pro
-mingw32-make.exe -f Makefile qmake_all
+mkdir Install
+qmake.exe -o Install/Makefile MazeCave/Maze.pro
+cd Install
 mingw32-make.exe -f Makefile -j20
+ls | grep -v release | xargs rm -rfv
 ```
 
 ### Work with Mazes
